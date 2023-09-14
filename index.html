@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body data-theme="light">
+    <div class="color">
+      <div class="selector">
+        <label for="theme">Choose a theme</label>
+        <select name="theme" id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="barbie">Barbie</option>
+        </select>
+      </div>
+      <header>
+        <h1 id="list_name"><span>To-Do List</span></h1>
+      </header>
+      <div id="to_do" class="task_list"></div>
+      <div class="task_input">
+        <input id="input_quantity" type="number" name="quantity" min="1" max="100" placeholder="Qty" />
+        <input id="input" type="text" placeholder="Add task" />
+        <input id="input_btn" type="button" value="Add to list" />
+      </div>
+      <div id="done" class="task_list"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>

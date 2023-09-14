@@ -1,0 +1,159 @@
+[data-theme="light"] {
+  --body-bg-col: #dacebf;
+  --list-bg-col: #fdf4e3;
+  --header-stroke: #b59f84;
+  --border-col: #b59f84;
+  --task-bg: #fffff5;
+  --h2-col: #b59f84;
+  --input-btn-col: white;
+  --box-shadow-col: rgb(103, 76, 57);
+  --delete-btn-col: black;
+  --delete-btn-txt-col: white;
+  --toggle-btn-col: black;
+  --toggle-btn--txt-col: white;
+  --font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+[data-theme="dark"] {
+  --body-bg-col: #d6d6d6;
+  --list-bg-col: #8c8c8c;
+  --header-stroke: #0b0909;
+  --border-col: #0b0909;
+  --task-bg: #44444c;
+  --h2-col: #0b0909;
+  --input-btn-col: white;
+  --box-shadow-col: #44444c;
+  --delete-btn-col: white;
+  --delete-btn-txt-col: black;
+  --toggle-btn-col: white;
+  --toggle-btn--txt-col: black;
+  --font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+[data-theme="barbie"] {
+  --body-bg-col: #fb6b90;
+  --list-bg-col: #fb8da0;
+  --header-stroke: #efebe0;
+  --border-col: #efebe0;
+  --task-bg: #fb8498;
+  --h2-col: #efebe0;
+  --input-btn-col: white;
+  --box-shadow-col: #fb4570;
+  --delete-btn-col: white;
+  --delete-btn-txt-col: black;
+  --toggle-btn-col: white;
+  --toggle-btn--txt-col: black;
+  --font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--body-bg-col);
+}
+
+.selector {
+  text-align: end;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  font-family: var(--font);
+  font-size: 12px;
+}
+
+select {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.color {
+  margin: 20px;
+  padding-bottom: 2rem;
+  box-shadow: 15px 10px 10px var(--box-shadow-col);
+  border-radius: 10px;
+  background-color: var(--list-bg-col);
+}
+
+#list_name {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  border-bottom: solid 1px var(--border-col);
+  -webkit-text-stroke: 2px var(--header-stroke);
+  color: transparent;
+  font-size: 80px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
+}
+
+.task_input {
+  text-align: end;
+  margin-right: 2rem;
+}
+
+#input {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#input_btn {
+  font-family: var(--font);
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--task-bg);
+
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+div .task {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.task_list h2 {
+  font-family: var(--font);
+  margin-left: 2rem;
+  color: var(--h2-col);
+}
+
+div .task span {
+  font-family: var(--font);
+  color: var(--h2-col);
+}
+
+div.task_input #input_quantity {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+div.task_input #input_btn {
+  background-color: var(--input-btn-col);
+}
+
+.toggle {
+  font-family: var(--font);
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--toggle-btn-col);
+  color: var(--toggle-btn--txt-col);
+  border: none;
+}
+
+.delete {
+  font-family: var(--font);
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--delete-btn-col);
+  color: var(--delete-btn-txt-col);
+  border: none;
+}
